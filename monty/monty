@@ -1,0 +1,19 @@
+int c; 
+int value;
+while(1){
+switch( c = getchar()){
+	case '+' :
+		fprintf(stderr, "[op:%c]", c);
+		return c ;
+	case '*' :
+		fprintf(stderr, "[op:%c]", c);
+		return c ;
+	case '(' : case ')'
+		fprintf(stderr, "[%c]", c);
+		return c ;
+	case ' ' : case '\t'
+		continue;
+	case '+' :
+		fprintf(stderr, "[op:%c]", c);
+		return c ;
+	
